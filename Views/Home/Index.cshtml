@@ -1,0 +1,19 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron">
+    <br /><br />
+    <p class="lead">This application uses Selenium.WebDriver lib to scrape static web page or dynamic JavaScript page. It uses Bootstrap Carousel component and MVC Webgrid to dispaly scrapped information.</p>
+    <br />
+    @using (Html.BeginForm("ContentScrape", "Home", FormMethod.Post))
+    {
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <input type="text" class="form-control" id="inputUrl" name="inputUrl" placeholder="Web Page Url">
+            </div>
+        </div>
+        <button type="submit" class="btn btn-primary">Scrape...</button>
+    }
+</div>
+
