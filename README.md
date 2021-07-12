@@ -1,4 +1,4 @@
-# GetSiteContent
+# Get Site Content
 
 This is an ASP.Net MVC web application programmed in C#. With inputting a web page url, it displays all scrapped images in a carousel and top 10 occurring words with their counts in a grid view.
 
