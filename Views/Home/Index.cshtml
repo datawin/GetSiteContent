@@ -13,7 +13,16 @@
                 <input type="text" class="form-control" id="inputUrl" name="inputUrl" placeholder="Web Page Url">
             </div>
         </div>
-        <button type="submit" class="btn btn-primary">Scrape...</button>
+        <button type="submit" id="scrape_btn" class="btn btn-primary">Submit</button>
     }
+    <div id="inprogress" style="display:none">
+        <img src="~/Content/loading-buffering.gif" style="height: 50px" /> Please wait, scrapping...
+    </div>
 </div>
+
+<script>
+    $("#scrape_btn").on("click", function () {
+        $("#inprogress").show();
+    });
+</script>
 
